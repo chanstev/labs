@@ -16,5 +16,4 @@ exclude:
   - vendor
   - .git
   - .github
-  - docs
   - src 
