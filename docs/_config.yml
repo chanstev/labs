@@ -1,1 +1,42 @@
- 
+remote_theme: chanstev/moonwalk
+title: Steven's Lab
+description: A home for experiments and thoughts
+baseurl: ""
+url: "https://labs.chansteven.com"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+# Collections
+collections:
+  experiments:
+    output: true
+    permalink: /experiments/:name/
+  thoughts:
+    output: true
+    permalink: /thoughts/:name/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "experiments"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "thoughts"
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - node_modules
+  - vendor
+  - .git
+  - .github
+  - src 
