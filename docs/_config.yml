@@ -10,6 +10,12 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+collections:
+  experiments:
+    output: true
+  thoughts:
+    output: true
+
 # Exclude from processing
 exclude:
   - node_modules
