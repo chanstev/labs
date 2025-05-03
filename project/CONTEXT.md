@@ -58,3 +58,14 @@ Steven's Lab is a static website for labs.chansteven.com, focusing on a lightwei
 - The About page is brief, visually consistent with the rest of the site, and not a public CV.
 - Navigation and URLs use the names: Experiments, Thoughts, About.
 - All placeholder/demo content is clearly marked as AI-generated.
+
+## Technical Notes
+### Jekyll Collections
+- Collections must be properly defined in `_config.yml` with:
+  - Correct directory names (prefixed with underscore)
+  - Output settings
+  - Permalink patterns
+  - Default front matter
+- Collection content must be in the correct directory (e.g., `_experiments/`, `_thoughts/`)
+- Templates should include null checks when accessing collections to prevent Liquid errors if the collection is empty or missing.
+- Collection directories must exist before adding content

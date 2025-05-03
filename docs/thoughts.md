@@ -7,6 +7,7 @@ title: Thoughts
 
 A collection of ideas, insights, and reflections on technology and innovation.
 
+{% if site.thoughts and site.thoughts.size > 0 %}
 <div class="thoughts-container">
   <div class="thoughts-list">
     <h2>Recent Thoughts</h2>
@@ -39,4 +40,7 @@ A collection of ideas, insights, and reflections on technology and innovation.
       </div>
     {% endfor %}
   </div>
-</div> 
+</div>
+{% else %}
+<p>No thoughts available yet.</p>
+{% endif %} 

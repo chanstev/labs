@@ -45,4 +45,27 @@
 - Minimal maintenance via Jekyll automation
 - Clear, modern design with Moonwalk theme
 - Transparent content policy for AI-generated material
-- Iterative, well-documented development with AI collaboration 
+- Iterative, well-documented development with AI collaboration
+
+## Lessons Learned
+### Jekyll Collections
+1. Collection Configuration
+   - Always define collections in `_config.yml` with proper settings
+   - Use underscore prefix for collection directories
+   - Set correct output and permalink patterns
+   - Configure default front matter
+
+2. Directory Structure
+   - Collection content must be in correct directories (e.g., `_experiments/`)
+   - Create collection directories before adding content
+   - Follow Jekyll's naming conventions strictly
+
+3. Template Safety
+   - Always check for collection existence before operations
+   - Include null checks in Liquid templates to prevent build errors if the collection is empty or missing
+   - Provide fallback content for empty collections
+
+4. Documentation
+   - Document collection structure and requirements
+   - Keep technical notes up to date
+   - Record troubleshooting steps for future reference 
