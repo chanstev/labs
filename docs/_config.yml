@@ -1,8 +1,8 @@
 remote_theme: chanstev/moonwalk
 title: Steven's Lab
 description: A home for experiments and thoughts
-baseurl: ""
-url: "https://labs.chansteven.com"
+baseurl: "/labs"
+url: "https://chanstev.github.io"
 
 # Build settings
 markdown: kramdown

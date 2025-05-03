@@ -26,4 +26,4 @@ A space for experiments, thoughts, and innovation.
   <p>No experiments available yet. Check back soon!</p>
 {% endif %}
 
-[View all experiments →](/experiments) 
+[View all experiments →]({{ site.baseurl }}/experiments) 
