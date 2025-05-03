@@ -1,17 +1,25 @@
 ---
 layout: default
-title: Experiments
+title: Steven's Lab
 ---
 
-# Experiments
+# Welcome to Steven's Lab
 
-<ul>
-{% assign experiments = site.experiments | sort: 'date' | reverse %}
+A space for experiments, thoughts, and innovation.
+
+## Featured Experiments
+
+{% assign experiments = site.experiments | sort: 'date' | reverse | limit:3 %}
 {% for experiment in experiments %}
-  {% unless experiment.title == 'Index' or experiment.basename == 'index' %}
-    <li>
-      <a href="{{ experiment.url }}">{{ experiment.title }}</a> - {{ experiment.description }}
-    </li>
-  {% endunless %}
+  <article class="experiment-card">
+    <h2><a href="{{ experiment.external_url }}">{{ experiment.title }}</a></h2>
+    <p>{{ experiment.description }}</p>
+    <div class="experiment-tags">
+      {% for tag in experiment.tags %}
+        <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  </article>
 {% endfor %}
-</ul> 
+
+[View all experiments →](/experiments) 
