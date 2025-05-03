@@ -1,5 +1,5 @@
-theme: moonwalk
-#title: Steven Chan Labs
+remote_theme: chanstev/moonwalk
+title: Steven Chan Labs
 description: A home for experiments of Steven Chan
 baseurl: ""
 url: "https://labs.chansteven.com"
@@ -9,6 +9,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 collections:
   experiments:
