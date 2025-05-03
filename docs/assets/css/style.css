@@ -344,4 +344,50 @@ ul {
 
 .project-card:hover, .thought-post:hover {
     box-shadow: 0 4px 16px rgba(60,60,255,0.12);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.nav-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav-right a {
+    color: #3b3bff;
+    font-size: 1.3em;
+    padding: 0.2em 0.3em;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-right a:hover {
+    background: #e6e8fa;
+    color: #222;
+}
+
+.about-brief {
+    max-width: 600px;
+    margin: 3em auto 2em auto;
+    background: #f5f7ff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(60,60,255,0.06);
+    padding: 2em 2em;
+    text-align: center;
+}
+
+.about-brief h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.about-brief p {
+    font-size: 1.1em;
+    color: #333;
 } 
