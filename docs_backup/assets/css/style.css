@@ -15,48 +15,46 @@
 }
 
 body {
-    font-family: 'Inter', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #fff;
-    color: #222;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
 }
 
 /* Navigation */
-header, footer {
-    background: #fff;
-    color: #222;
-    border-bottom: 1px solid #eee;
-    padding: 1.5em 0.5em 1em 0.5em;
+header {
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-nav {
+.nav-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 2em;
-    font-size: 1.1em;
-    font-weight: 500;
-}
-
-nav a {
-    color: #3b3bff;
-    text-decoration: none;
-    padding: 0.2em 0.7em;
-    border-radius: 6px;
-    transition: background 0.2s, color 0.2s;
-}
-
-nav a:hover, nav a.active {
-    background: #e6e8fa;
-    color: #222;
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: #222;
-    margin-right: 2em;
-    letter-spacing: 0.02em;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 2rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
 }
 
 /* Hero Section */
@@ -136,13 +134,10 @@ nav a:hover, nav a.active {
 
 /* Footer */
 footer {
-    background: #fff;
-    color: #888;
-    border-top: 1px solid #eee;
+    background-color: var(--text-color);
+    color: var(--white);
+    padding: 2rem;
     text-align: center;
-    font-size: 1em;
-    padding: 1.5em 0.5em 1em 0.5em;
-    margin-top: 2em;
 }
 
 /* Responsive Design */
@@ -229,13 +224,11 @@ section h2 {
 
 .tag {
     display: inline-block;
-    background: #e6e8fa;
-    color: #3b3bff;
-    border-radius: 4px;
-    padding: 0.2em 0.7em;
-    font-size: 0.9em;
-    margin-right: 0.4em;
-    margin-bottom: 0.2em;
+    background-color: var(--light-bg);
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+    font-size: 0.8rem;
 }
 
 .post-content {
@@ -292,172 +285,4 @@ section h2 {
 
 .prev-post:hover, .next-post:hover {
     text-decoration: underline;
-}
-
-main {
-    max-width: 900px;
-    margin: 2em auto;
-    background: #fafbfc;
-    padding: 2.5em 2em;
-    border-radius: 18px;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.04);
-}
-
-h1, h2, h3 {
-    color: #1a1a1a;
-    font-family: 'Inter', Arial, sans-serif;
-}
-
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-    font-weight: 800;
-}
-
-h2 {
-    font-size: 1.5em;
-    margin-top: 2em;
-    margin-bottom: 1em;
-    font-weight: 700;
-}
-
-h3 {
-    font-size: 1.1em;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    font-weight: 600;
-}
-
-ul {
-    padding-left: 1.2em;
-}
-
-/* Card styles for experiments/thoughts */
-.project-card, .thought-post {
-    background: #f5f7ff;
-    border-radius: 16px;
-    box-shadow: 0 2px 8px rgba(60,60,255,0.06);
-    padding: 1.5em 1.2em;
-    margin-bottom: 1.5em;
-    transition: box-shadow 0.2s;
-}
-
-.project-card:hover, .thought-post:hover {
-    box-shadow: 0 4px 16px rgba(60,60,255,0.12);
-}
-
-.nav-left {
-    display: flex;
-    align-items: center;
-    gap: 2em;
-}
-
-.nav-right {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: 1em;
-}
-
-.nav-right a {
-    color: #3b3bff;
-    font-size: 1.3em;
-    padding: 0.2em 0.3em;
-    border-radius: 6px;
-    transition: background 0.2s, color 0.2s;
-}
-
-.nav-right a:hover {
-    background: #e6e8fa;
-    color: #222;
-}
-
-.about-brief {
-    max-width: 600px;
-    margin: 3em auto 2em auto;
-    background: #f5f7ff;
-    border-radius: 16px;
-    box-shadow: 0 2px 8px rgba(60,60,255,0.06);
-    padding: 2em 2em;
-    text-align: center;
-}
-
-.about-brief h1 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-}
-
-.about-brief p {
-    font-size: 1.1em;
-    color: #333;
-}
-
-/* Thoughts page styles */
-.thoughts-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.thoughts-list {
-    border-right: 1px solid var(--light-bg);
-    padding-right: 2rem;
-}
-
-.thoughts-tags {
-    padding-left: 1rem;
-}
-
-.thought-post {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border-radius: 8px;
-    transition: background-color 0.2s;
-}
-
-.thought-post:hover {
-    background-color: var(--light-bg);
-}
-
-.thought-date {
-    color: var(--text-muted);
-    font-size: 0.9em;
-    margin-left: 0.5rem;
-}
-
-.tag-section {
-    margin-bottom: 2rem;
-}
-
-.tag-section h3 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.tag-section ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.tag-section li {
-    margin-bottom: 0.5rem;
-}
-
-@media (max-width: 768px) {
-    .thoughts-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .thoughts-list {
-        border-right: none;
-        border-bottom: 1px solid var(--light-bg);
-        padding-right: 0;
-        padding-bottom: 2rem;
-        margin-bottom: 2rem;
-    }
-    
-    .thoughts-tags {
-        padding-left: 0;
-    }
 } 

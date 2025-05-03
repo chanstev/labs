@@ -7,19 +7,11 @@ title: Experiments
 
 Welcome to my experiments page. Here you'll find a list of my featured experiments.
 
-## Index
-{% assign experiments = site.experiments | sort: 'title' %}
-<ul>
-{% for experiment in experiments %}
-  <li><a href="#{{ experiment.title | slugify }}">{{ experiment.title }}</a></li>
-{% endfor %}
-</ul>
-
 ## All Experiments
 
 {% assign experiments = site.experiments | sort: 'title' %}
 {% for experiment in experiments %}
-  <article id="{{ experiment.title | slugify }}" class="project-card">
+  <article class="project-card">
     <h2><a href="{{ experiment.external_url }}">{{ experiment.title }}</a></h2>
     <p>{{ experiment.description }}</p>
     <div class="project-tags">

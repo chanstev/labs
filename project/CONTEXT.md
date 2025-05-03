@@ -3,10 +3,14 @@
 ## Overview
 Steven's Lab is a static website for labs.chansteven.com, focusing on a lightweight landing page hosted on GitHub Pages. The website showcases mini-experiments, a thoughts section, and an about page, with an emphasis on minimal maintenance and AI collaboration.
 
+## Theme and Visual Design
+- The site uses the Moonwalk Jekyll theme via the remote_theme setting (`chanstev/moonwalk`) for a modern, clean, and visually appealing look.
+
 ## Documentation Structure
 - **README.md**: High-level overview for human visitors (project summary, structure, getting started)
 - **CONTEXT.md**: Source of truth for project development, technical decisions, and collaboration notes
 - **SETUP.md**: Steps for GitHub Pages and custom domain setup
+- **HISTORY.md**: Iteration history, major decisions, and lessons learned
 
 ## Technology Stack
 - **Hosting**: GitHub Pages
@@ -44,3 +48,13 @@ Steven's Lab is a static website for labs.chansteven.com, focusing on a lightwei
 - All content is managed via Markdown in the `docs/` directory
 - Minimal manual updates required
 - Project context and setup are documented in the `project/` directory
+
+## Content Policy
+- All generated placeholder content (such as experiments, thoughts, and about) must be clearly indicated as AI-generated placeholder content for demo purposes only. This ensures transparency and avoids confusion with real or production content.
+
+## UI/UX and Content Requirements
+- The Experiments page serves as the landing page (root of the site).
+- Social links (GitHub, LinkedIn) are displayed in the top right of the navigation bar.
+- The About page is brief, visually consistent with the rest of the site, and not a public CV.
+- Navigation and URLs use the names: Experiments, Thoughts, About.
+- All placeholder/demo content is clearly marked as AI-generated.
