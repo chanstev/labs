@@ -3,14 +3,24 @@
 ## Overview
 This project is a static website for labs.chansteven.com, focusing on a lightweight landing page hosted on GitHub Pages. The website showcases mini-projects, a blog, and a profile page, with an emphasis on minimal maintenance.
 
+## GitHub Pages Configuration
+- The website is configured to use the `docs/` directory as the publishing source for GitHub Pages.
+- This is a requirement of GitHub Pages, which only allows publishing from either:
+  1. The root directory (`/`) of a specific branch
+  2. The `/docs` directory of a specific branch
+- All website content must be placed in the `docs/` directory to be published.
+- The project documentation and context are kept separate in the `project/` directory to maintain a clean separation between published content and project documentation.
+
 ## Project Structure
-- `docs/`: Contains the main content of the website.
+- `docs/`: Contains the main content of the website (GitHub Pages source).
   - `index.html`: The landing page.
   - `projects/`: Directory for project Markdown files.
   - `thoughts/`: Directory for blog post Markdown files.
   - `profile/`: Directory for profile content.
   - `_layouts/`: Contains layout templates for different sections.
   - `assets/`: Contains CSS, JavaScript, and other static assets.
+- `project/`: Contains project documentation and context.
+  - `CONTEXT.md`: Project context document.
 
 ## Key Features
 - **Projects**: Showcases mini-projects with detailed descriptions and links to external repositories.
@@ -28,6 +38,7 @@ This project is a static website for labs.chansteven.com, focusing on a lightwei
 ## Maintenance
 - Projects and thoughts are maintained using Markdown files, simplifying content management and allowing for rich content directly in the files.
 - The website is designed to be easily maintainable with minimal manual updates required.
+- All content updates must be made in the `docs/` directory to ensure they are published to GitHub Pages.
 
 ## Future Plans
 - Continue to add new projects and thoughts as they are developed.

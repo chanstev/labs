@@ -6,7 +6,7 @@ This repository contains a static website for labs.chansteven.com, focusing on a
 ## Methodology
 This repository was co-created using Cursor, an AI-powered coding assistant. The development process involved the following steps:
 
-1. **Project Context Document**: The initial step was to build a comprehensive project context document (`docs/README.md`) that outlines the project's structure, key features, and maintenance strategies.
+1. **Project Context Document**: The initial step was to build a comprehensive project context document (`project/CONTEXT.md`) that outlines the project's structure, key features, and maintenance strategies.
 
 2. **Initial Version Generation**: Using the project context document, the initial version of the website was generated. This included creating the necessary files and directories, such as the landing page, project and blog post Markdown files, and layout templates.
 
@@ -20,23 +20,6 @@ This repository was co-created using Cursor, an AI-powered coding assistant. The
 The project context document serves as a guiding principle for AI collaboration by providing a clear and structured overview of the project. It ensures that all stakeholders, including AI, have a consistent understanding of the project's goals, structure, and maintenance strategies. This document acts as a reference point for generating content and making decisions, facilitating efficient and effective collaboration between human developers and AI.
 
 ## Project Structure
-- `pages/`: Contains the main content of the website.
-  - `index.html`: The landing page.
-  - `projects/`: Directory for project Markdown files.
-  - `thoughts/`: Directory for blog post Markdown files.
-  - `profile/`: Directory for profile content.
-  - `_layouts/`: Contains layout templates for different sections.
-  - `assets/`: Contains CSS, JavaScript, and other static assets.
-
-## Key Features
-- **Projects**: Showcases mini-projects with detailed descriptions and links to external repositories.
-- **Blog**: A section for sharing thoughts and insights, organized by tags.
-- **Profile**: A professional introduction and details about the user.
-
-## Maintenance
-- Projects and thoughts are maintained using Markdown files, simplifying content management and allowing for rich content directly in the files.
-- The website is designed to be easily maintainable with minimal manual updates required.
-
-## Future Plans
-- Continue to add new projects and thoughts as they are developed.
-- Explore additional features or improvements to enhance user experience. 
+- `docs/`: Contains the main content of the website (GitHub Pages source)
+- `project/`: Contains project documentation and context, serving as a collaboration space between AI and human developers
+  - `CONTEXT.md`: Project context document that guides AI-human collaboration 
