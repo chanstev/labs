@@ -13,8 +13,10 @@ plugins:
 collections:
   experiments:
     output: true
+    permalink: /experiments/:name/
   thoughts:
     output: true
+    permalink: /thoughts/:name/
 
 # Exclude from processing
 exclude:
