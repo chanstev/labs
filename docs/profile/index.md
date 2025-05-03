@@ -5,6 +5,12 @@ title: About Me
 
 # Steven Chan
 
+Welcome to my profile! I'm passionate about technology, AI, and building useful things.
+
+- **Background:** Software engineering, AI research
+- **Current Focus:** AI collaboration, web experiments
+- **Contact:** [GitHub](https://github.com/chanstev) | [LinkedIn](https://linkedin.com/in/chanstev)
+
 ## Professional Summary
 
 I am a technology enthusiast and software engineer with a passion for building innovative solutions. My expertise spans across various domains including web development, machine learning, and data engineering.

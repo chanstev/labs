@@ -1,21 +1,21 @@
 ---
 layout: default
-title: Projects
+title: Experiments
 ---
 
-# Projects
+# Experiments
 
-Welcome to my projects page. Here you'll find a list of my featured projects.
+Welcome to my experiments page. Here you'll find a list of my featured experiments.
 
-## All Projects
+## All Experiments
 
-{% assign projects = site.projects | sort: 'title' %}
-{% for project in projects %}
+{% assign experiments = site.experiments | sort: 'title' %}
+{% for experiment in experiments %}
   <article class="project-card">
-    <h2><a href="{{ project.external_url }}">{{ project.title }}</a></h2>
-    <p>{{ project.description }}</p>
+    <h2><a href="{{ experiment.external_url }}">{{ experiment.title }}</a></h2>
+    <p>{{ experiment.description }}</p>
     <div class="project-tags">
-      {% for tag in project.tags %}
+      {% for tag in experiment.tags %}
         <span class="tag">{{ tag }}</span>
       {% endfor %}
     </div>
