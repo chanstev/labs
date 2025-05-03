@@ -34,8 +34,6 @@ async function loadProjects() {
 
 // Initialize the page
 document.addEventListener('DOMContentLoaded', () => {
-    loadProjects();
-    
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
