@@ -1,7 +1,7 @@
 ---
 title: "Thought 3 - AI Generated Placeholder"
 date: 2025-05-04
-draft: true
+draft: false
 ---
 
 # Thought 3

@@ -1,7 +1,7 @@
 ---
 title: "Experiment 2 - AI Generated Placeholder"
 date: 2025-05-04
-draft: true
+draft: false
 ---
 
 # Experiment 2

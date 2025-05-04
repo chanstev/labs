@@ -32,12 +32,13 @@ Steven's Lab is a static website for labs.chansteven.com, focusing on a lightwei
 - `project/`: Project documentation and context
 
 ## Key Features
-- **Experiments**: Mini-experiments with descriptions and links
-- **Thoughts**: Personal insights and musings, organized by tags
-- **About**: Professional introduction and background
-- **Automatic Listing**: Jekyll/Liquid templates for content organization
-- **Responsive Design**: Mobile-friendly, accessible, and visually clear
-- **Minimal Maintenance**: Content updates via Markdown
+- **Experiments**: Mini-experiments with descriptions and links, dynamically filtered to show only featured and non-draft entries using Hugo templates.
+- **Thoughts**: Personal insights organized by tags, with similar filtering and sorting capabilities.
+- **About**: Professional introduction and background.
+- **Automatic Listing**: Hugo templates for dynamic content organization, including card-based layouts for improved user experience and sorting by title in ascending order.
+- **Responsive Design**: Mobile-friendly, accessible, and visually clear using the Quint theme.
+- **Minimal Maintenance**: Content updates via Markdown, with AI collaboration for generating placeholders and automating updates.
+- **Draft Handling**: Entries marked as drafts are excluded from builds to maintain a clean site.
 
 ## Recent Updates
 - Site name standardized as "Steven's Lab"
@@ -62,12 +63,12 @@ Steven's Lab is a static website for labs.chansteven.com, focusing on a lightwei
 - All placeholder/demo content is clearly marked as AI-generated.
 
 ## Technical Notes
-### Jekyll Collections
-- Collections must be properly defined in `_config.yml` with:
+### Hugo Collections
+- Collections must be properly defined in `config.toml` with:
   - Correct directory names (prefixed with underscore)
   - Output settings
   - Permalink patterns
   - Default front matter
 - Collection content must be in the correct directory (e.g., `_experiments/`, `_thoughts/`)
-- Templates should include null checks when accessing collections to prevent Liquid errors if the collection is empty or missing.
+- Templates should include null checks when accessing collections to prevent errors if the collection is empty or missing.
 - Collection directories must exist before adding content
