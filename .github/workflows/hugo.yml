@@ -21,9 +21,7 @@ jobs:
       
       # Install Hugo Modules
       - name: Install Hugo Modules
-        run: |
-          hugo mod init github.com/chanstev/labs
-          hugo mod get github.com/theNewDynamic/gohugo-theme-ananke
+        run: hugo mod get github.com/theNewDynamic/gohugo-theme-ananke
       
       # Build the site
       - name: Build with Hugo
