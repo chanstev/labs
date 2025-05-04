@@ -68,4 +68,53 @@
 4. Documentation
    - Document collection structure and requirements
    - Keep technical notes up to date
+   - Record troubleshooting steps for future reference
+
+### Hugo Setup Attempts
+#### 2025-05-04: Hugo Migration Attempt
+
+### Initial Setup
+- Started with Jekyll configuration
+- Switched to Hugo with Quint theme
+- Encountered issues with theme installation
+
+### Theme Issues
+1. Quint theme installation failed due to:
+   - SSH authentication issues
+   - Complex theme setup
+   - Configuration syntax errors
+
+2. Switched to PaperMod theme:
+   - Built-in theme
+   - Multiple TOML syntax errors
+   - Complex configuration structure
+
+3. Finally switched to Ananke theme:
+   - Built-in theme
+   - Simpler configuration
+   - Still facing TOML syntax issues
+
+### Configuration Issues
+1. Common TOML syntax errors:
+   - Incorrect nesting of tables
+   - Improper array syntax
+   - Incorrect key-value pair formatting
+
+2. Specific issues encountered:
+   - Goldmark markup configuration syntax
+   - Theme-specific configuration structures
+   - Build directory configuration
+
+### Lessons Learned
+1. Start with simpler themes
+2. Verify TOML syntax carefully
+3. Use built-in themes when possible
+4. Document configuration changes
+5. Test locally before pushing
+
+### Next Steps
+1. Clean up current configuration
+2. Start fresh with a simpler setup
+3. Document all configuration changes
+4. Verify each step before proceeding
    - Record troubleshooting steps for future reference 

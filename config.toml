@@ -3,40 +3,26 @@ languageCode = "en-us"
 title = "Steven's Lab"
 theme = "ananke"
 
-[params]
-  description = "A place for experiments and thoughts"
-  author = "Steven Chan"
-  
-  # Social links
-  social = [
-    {name = "github", url = "https://github.com/chanstev"},
-    {name = "linkedin", url = "https://linkedin.com/in/chansteven"}
-  ]
+[build]
+publishDir = "docs"
 
 [markup]
-  goldmark = {
-    renderer = {
-      unsafe = true
-    }
+goldmark = {
+  renderer = {
+    unsafe = true
   }
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
+}
 
 [menu]
   [[menu.main]]
     name = "Experiments"
-    url = "/"
+    url = "/experiments/"
     weight = 1
   [[menu.main]]
     name = "Thoughts"
-    url = "/posts/"
+    url = "/thoughts/"
     weight = 2
   [[menu.main]]
     name = "About"
     url = "/about/"
     weight = 3
-
-[build]
-  # Build into docs directory for GitHub Pages
-  publishDir = "docs"

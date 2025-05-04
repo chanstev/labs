@@ -1,8 +1,11 @@
 ---
-title: "Experiments"
-weight: 1
+title: "Steven's Lab"
 ---
 
-Welcome to Steven's Lab! This is where I share my experiments and thoughts on various topics.
+# Welcome to Steven's Lab
 
-{{< experiments >}}
+A place for experiments and thoughts.
+
+{{< readmore "Experiments" "/experiments/" >}}
+{{< readmore "Thoughts" "/thoughts/" >}}
+{{< readmore "About" "/about/" >}}
