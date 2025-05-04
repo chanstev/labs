@@ -3,6 +3,7 @@ title: "Sample Experiment"
 date: 2025-05-04
 description: "A placeholder experiment to demonstrate the structure"
 tags: ["demo", "placeholder"]
+featured: true
 ---
 
 # {{ .Title }}

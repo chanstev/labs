@@ -3,6 +3,7 @@ title: "Sample Thought"
 date: 2025-05-04
 description: "A placeholder thought to demonstrate the structure"
 tags: ["demo", "placeholder"]
+featured: true
 ---
 
 # {{ .Title }}
