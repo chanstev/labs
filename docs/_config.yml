@@ -1,5 +1,4 @@
 title: Steven's Lab
-remote_theme: chanstev/moonwalk
 
 # Collections
 collections:
@@ -36,6 +35,7 @@ social:
 
 # Build settings
 markdown: kramdown
+theme: minima
 exclude:
   - README.md
   - LICENSE
