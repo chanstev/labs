@@ -19,6 +19,12 @@ jobs:
           hugo-version: '0.120.4'
           extended: true
       
+      # Install Hugo Modules
+      - name: Install Hugo Modules
+        run: |
+          hugo mod init github.com/chanstev/labs
+          hugo mod get github.com/budparr/gohugo-themes/ananke
+      
       # Build the site
       - name: Build with Hugo
         run: hugo --minify
