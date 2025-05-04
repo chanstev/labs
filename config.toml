@@ -34,3 +34,7 @@ theme = "quint"
     name = "About"
     url = "/about/"
     weight = 3
+
+[build]
+  # Build into docs directory for GitHub Pages
+  publishDir = "docs"
