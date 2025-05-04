@@ -6,7 +6,7 @@ tags: ["demo", "placeholder"]
 featured: true
 ---
 
-# {{ .Title }}
+# Sample Experiment
 
 This is a sample experiment page. In a real implementation, this would contain:
 
