@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Steven's Lab"
-theme = "ananke"
+theme = "PaperMod"
 
 [build]
 publishDir = "docs"
