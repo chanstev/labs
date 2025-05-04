@@ -1,4 +1,6 @@
 title: Steven's Lab
+baseurl: ""
+url: "https://labs.chansteven.com"
 
 # Collections
 collections:
@@ -36,7 +38,23 @@ social:
 # Build settings
 markdown: kramdown
 theme: minima
+
+# Exclude files
 exclude:
+  - README.md
+  - LICENSE
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - .git
+  - .github
+  - .DS_Store
+
+# Permalinks
+permalink: pretty
   - README.md
   - LICENSE
   - CNAME
