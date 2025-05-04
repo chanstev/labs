@@ -4,7 +4,7 @@
 Steven's Lab is a static website for labs.chansteven.com, focusing on a lightweight landing page hosted on GitHub Pages. The website showcases mini-experiments, a thoughts section, and an about page, with an emphasis on minimal maintenance and AI collaboration.
 
 ## Theme and Visual Design
-- The site uses the Moonwalk Jekyll theme via the remote_theme setting (`chanstev/moonwalk`) for a modern, clean, and visually appealing look.
+- The site uses the Quint Hugo theme for a modern, clean, and visually appealing look.
 
 ## Documentation Structure
 - **README.md**: High-level overview for human visitors (project summary, structure, getting started)
@@ -14,20 +14,20 @@ Steven's Lab is a static website for labs.chansteven.com, focusing on a lightwei
 
 ## Technology Stack
 - **Hosting**: GitHub Pages
-- **Static Site Generator**: Jekyll
+- **Static Site Generator**: Hugo
+- **Theme**: Quint
 - **Content**: Markdown files for all content
-- **Styling**: Custom CSS inspired by Google Labs
+- **Styling**: Theme-provided CSS
 
 ## Project Structure
-- `docs/`: Website content (GitHub Pages source)
-  - `index.html`: Landing page
-  - `experiments/`: Experiment Markdown files
-  - `thoughts/`: Thought/idea Markdown files
+- `content/`: Website content
+  - `posts/`: Blog posts and experiments
   - `about/`: About page
-  - `_layouts/`: Jekyll layout templates
-  - `assets/`: CSS and static assets
-  - `_config.yml`: Jekyll config
-  - `CNAME`: Custom domain config (if used)
+  - `index.md`: Landing page
+- `themes/`: Hugo themes directory
+  - `quint/`: Quint theme
+- `static/`: Static assets
+- `config.toml`: Hugo configuration
 - `project/`: Project documentation and context
 
 ## Key Features
