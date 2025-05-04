@@ -16,21 +16,8 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.120.4'  # Using a specific version that's known to work
+          hugo-version: '0.120.4'
           extended: true
-      
-      # Set up SSH for theme cloning
-      - name: Set up SSH
-        run: |
-          mkdir -p ~/.ssh
-          echo "Host github.com" >> ~/.ssh/config
-          echo "  StrictHostKeyChecking no" >> ~/.ssh/config
-          echo "  User git" >> ~/.ssh/config
-      
-      # Install theme
-      - name: Install Theme
-        run: |
-          git clone git@github.com:panr/hugo-theme-quint.git themes/quint
       
       # Build the site
       - name: Build with Hugo
