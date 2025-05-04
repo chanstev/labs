@@ -11,7 +11,7 @@ date: 2025-05-04
 </style>
 
 <div class="thought-grid">
-{{ range (where .Pages "Params.featured" true | where "Params.draft" "==" false | sort "Title" "asc") }}
+{{ range (where .Pages "Params.draft" "==" false | sort "Title" "asc") }}
   <div class="thought-card">
     <h2><a href="{{.RelPermalink}}">{{.Title}}</a></h2>
     <p>{{.Description | default "No description provided."}}</p>
