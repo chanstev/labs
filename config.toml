@@ -6,10 +6,10 @@ theme = "ananke"
 [build]
 publishDir = "docs"
 
-[markup]
-goldmark = true
-[markup.goldmark.renderer]
-unsafe = true
+[markup.goldmark]
+renderer = {
+  unsafe = true
+}
 
 [menu]
   [[menu.main]]
