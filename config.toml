@@ -1,4 +1,4 @@
-baseURL = "https://labs.chansteven.com/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Steven's Lab"
 theme = "PaperMod"
@@ -7,6 +7,7 @@ theme = "PaperMod"
 publishDir = "docs"
 
 [params]
+  # Disable all PaperMod features
 disableAnchoredHeadings = true
 hideMeta = true
 hideSummary = true
@@ -17,3 +18,12 @@ hideSummary = true
     isPlainText = false
     isHTML = true
     charset = "UTF-8"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[server]
+  port = 1313
+  appendPort = false
