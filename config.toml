@@ -14,9 +14,11 @@ theme = "ananke"
   ]
 
 [markup]
-  goldmark = true
-  [markup.goldmark.renderer]
-    unsafe = true
+  goldmark = {
+    renderer = {
+      unsafe = true
+    }
+  }
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
