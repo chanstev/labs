@@ -7,22 +7,10 @@ theme = "PaperMod"
 publishDir = "docs"
 
 [params]
-  # Disable all PaperMod features
-disableAnchoredHeadings = true
-hideMeta = true
-hideSummary = true
-
-[outputFormats]
-  [outputFormats.HTML]
-    mediaType = "text/html"
-    isPlainText = false
-    isHTML = true
-    charset = "UTF-8"
-
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+  # Disable PaperMod features that might cause issues
+  disableAnchoredHeadings = true
+  hideMeta = true
+  hideSummary = true
 
 [server]
   port = 1313
