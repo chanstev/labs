@@ -1,3 +1,0 @@
----
-title: "Experiment 1"
----

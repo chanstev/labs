@@ -2,9 +2,18 @@ baseURL = "https://labs.chansteven.com/"
 languageCode = "en-us"
 title = "Steven's Lab"
 theme = "PaperMod"
+
 [build]
 publishDir = "docs"
 
 [params]
-hideMeta = true
 disableAnchoredHeadings = true
+hideMeta = true
+hideSummary = true
+
+[outputFormats]
+  [outputFormats.HTML]
+    mediaType = "text/html"
+    isPlainText = false
+    isHTML = true
+    charset = "UTF-8"
