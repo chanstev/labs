@@ -5,16 +5,6 @@ date: 2025-05-04
 
 # Experiments
 
-<style>
-.experiment-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
-.experiment-card { border: 1px solid #ccc; padding: 10px; border-radius: 5px; background-color: #f9f9f9; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-</style>
-
-<div class="experiment-grid">
-{{ range (where .Pages "Params.draft" "==" false | sort "Title" "asc") }}
-  <div class="experiment-card">
-    <h2><a href="{{.RelPermalink}}">{{.Title}}</a></h2>
-    <p>{{.Description | default "No description provided."}}</p>
-  </div>
+{{ range .Pages | where "Params.draft" "==" false | sort "Title" "asc" }}
+- [{{.Title}}]({{.RelPermalink}})
 {{ end }}
-</div>
