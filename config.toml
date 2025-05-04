@@ -4,3 +4,6 @@ title = "Steven's Lab"
 theme = "PaperMod"
 [build]
 publishDir = "docs"
+
+[params]
+disableAnchoredHeadings = true
