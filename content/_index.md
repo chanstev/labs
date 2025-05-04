@@ -13,7 +13,7 @@ A place for experiments and thoughts.
 
 ## Featured Experiments
 <div class="home-grid">
-{{ range .Site.RegularPages | where "Section" "experiments" | where "Params.featured" true | where "Params.draft" "==" false | sort "Title" "asc" }}
+{{ range .Site.RegularPages | where "Section" "experiments" | where "Params.featured" "==" true | where "Params.draft" "==" false | sort "Title" "asc" }}
   <div class="home-card">
     <h2><a href="{{.RelPermalink}}">{{.Title}}</a></h2>
     <p>{{.Description | default "No description provided."}}</p>
@@ -23,10 +23,14 @@ A place for experiments and thoughts.
 
 ## Featured Thoughts
 <div class="home-grid">
-{{ range .Site.RegularPages | where "Section" "thoughts" | where "Params.featured" true | where "Params.draft" "==" false | sort "Title" "asc" }}
+{{ range .Site.RegularPages | where "Section" "thoughts" | where "Params.featured" "==" true | where "Params.draft" "==" false | sort "Title" "asc" }}
   <div class="home-card">
     <h2><a href="{{.RelPermalink}}">{{.Title}}</a></h2>
     <p>{{.Description | default "No description provided."}}</p>
   </div>
 {{ end }}
 </div>
+
+## Debug
+<p>Number of featured experiments: {{ len (.Site.RegularPages | where "Section" "experiments" | where "Params.featured" "==" true) }}</p>
+<p>Number of featured thoughts: {{ len (.Site.RegularPages | where "Section" "thoughts" | where "Params.featured" "==" true) }}</p>
