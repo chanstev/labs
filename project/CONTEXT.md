@@ -11,6 +11,7 @@ Steven's Lab is a static website for labs.chansteven.com, focusing on a lightwei
 - **CONTEXT.md**: Source of truth for project development, technical decisions, and collaboration notes
 - **SETUP.md**: Steps for GitHub Pages and custom domain setup
 - **HISTORY.md**: Iteration history, major decisions, and lessons learned
+- Hugo hosting guide: [Host on GitHub Pages](https://gohugo.io/host-and-deploy/host-on-github-pages/) for detailed deployment instructions and best practices.
 
 ## Technology Stack
 - **Hosting**: GitHub Pages
