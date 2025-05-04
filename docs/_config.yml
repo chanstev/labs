@@ -7,6 +7,33 @@ collections:
   experiments:
     output: true
     permalink: /experiments/:path/
+  thoughts:
+    output: true
+    permalink: /thoughts/:path/
+
+# Navigation
+nav:
+  - title: Experiments
+    url: /
+  - title: Thoughts
+    url: /thoughts/
+  - title: About
+    url: /about/
+
+# Social links
+social:
+  github: "chanstev"
+  linkedin: "chansteven"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Permalinks
+permalink: /:path/collections:
+  experiments:
+    output: true
+    permalink: /experiments/:path/
     default:
       layout: experiment
       title: ""
