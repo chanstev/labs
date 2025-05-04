@@ -15,15 +15,15 @@ theme = "PaperMod"
 
   # PaperMod specific settings
   PaperMod = {
-    themeColor = "blue"
-    themeVariant = "auto"
-    showBreadCrumbs = true
-    showRightColumn = true
-    showContentFooter = true
-    showSummary = true
-    showFullArticle = false
-    showReadingTime = true
-    showShareButtons = true
+    themeColor = "blue",
+    themeVariant = "auto",
+    showBreadCrumbs = true,
+    showRightColumn = true,
+    showContentFooter = true,
+    showSummary = true,
+    showFullArticle = false,
+    showReadingTime = true,
+    showShareButtons = true,
     showPostNavLinks = true
   }
 
