@@ -6,4 +6,5 @@ theme = "PaperMod"
 publishDir = "docs"
 
 [params]
+hideMeta = true
 disableAnchoredHeadings = true
