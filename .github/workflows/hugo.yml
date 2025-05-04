@@ -32,8 +32,6 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Hugo
         run: curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep "browser_download_url" | grep "hugo_extended_.*_Linux-64bit.tar.gz" | cut -d '"' -f 4 | wget -i - -O hugo.tar.gz && tar -xzf hugo.tar.gz hugo && sudo mv hugo /usr/local/bin
-      - name: Get Hugo modules
-        run: hugo mod get -u ./...
       - name: Build with Hugo
         run: hugo --minify --baseURL ${{ steps.pages.outputs.base_url }}/
       - name: Upload artifact

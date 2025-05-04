@@ -3,12 +3,6 @@ languageCode = "en-us"
 title = "Steven's Lab"
 theme = "quint"
 
-[module]
-  enable = true
-
-[[module.imports]]
-  path = "github.com/victoriadrake/hugo-theme-quint"
-
 [build]
 publishDir = "docs"
 
