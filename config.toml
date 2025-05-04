@@ -1,7 +1,13 @@
 baseURL = "https://labs.chansteven.com/"
 languageCode = "en-us"
 title = "Steven's Lab"
-theme = "ananke"
+theme = "quint"
+
+[module]
+  enable = true
+
+[[module.imports]]
+  path = "github.com/victoriadrake/hugo-theme-quint"
 
 [build]
 publishDir = "docs"

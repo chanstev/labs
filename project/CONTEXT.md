@@ -26,7 +26,7 @@ Steven's Lab is a static website for labs.chansteven.com, focusing on a lightwei
   - `about/`: About page
   - `index.md`: Landing page
 - `themes/`: Hugo themes directory
-  - `quint/`: Quint theme
+  - `ananke/`: Ananke theme
 - `static/`: Static assets
 - `config.toml`: Hugo configuration
 - `project/`: Project documentation and context
