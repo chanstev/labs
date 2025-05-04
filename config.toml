@@ -2,20 +2,5 @@ baseURL = "https://labs.chansteven.com/"
 languageCode = "en-us"
 title = "Steven's Lab"
 theme = "PaperMod"
-
 [build]
 publishDir = "docs"
-
-[menu]
-  [[menu.main]]
-    name = "Experiments"
-    url = "/experiments/"
-    weight = 1
-  [[menu.main]]
-    name = "Thoughts"
-    url = "/thoughts/"
-    weight = 2
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 3
