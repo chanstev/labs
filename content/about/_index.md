@@ -20,5 +20,5 @@ You can find me on:
 - [GitHub](https://github.com/chanstev)
 - [LinkedIn](https://linkedin.com/in/chansteven)
 
-{{< social "github" "https://github.com/chanstev" >}}
-{{< social "linkedin" "https://linkedin.com/in/chansteven" >}}
+[GitHub](https://github.com/chanstev)
+[LinkedIn](https://linkedin.com/in/chansteven)
