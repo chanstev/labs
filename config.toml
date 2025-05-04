@@ -1,7 +1,7 @@
 baseURL = "https://labs.chansteven.com/"
 languageCode = "en-us"
 title = "Steven's Lab"
-theme = "PaperMod"
+theme = "ananke"
 
 [params]
   description = "A place for experiments and thoughts"
@@ -12,20 +12,6 @@ theme = "PaperMod"
     {name = "github", url = "https://github.com/chanstev"},
     {name = "linkedin", url = "https://linkedin.com/in/chansteven"}
   ]
-
-  # PaperMod specific settings
-  PaperMod = {
-    themeColor = "blue"
-    themeVariant = "auto"
-    showBreadCrumbs = true
-    showRightColumn = true
-    showContentFooter = true
-    showSummary = true
-    showFullArticle = false
-    showReadingTime = true
-    showShareButtons = true
-    showPostNavLinks = true
-  }
 
 [markup]
   goldmark = true
