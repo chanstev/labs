@@ -44,6 +44,7 @@ Steven's Lab is a static website for labs.chansteven.com, focusing on a lightwei
 - Profile section renamed to About
 - Improved color theme and navigation for clarity and accessibility
 - Copyright updated
+- Switched to Quint theme for simplicity and  compatibility; replaced shortcodes with Markdown links to avoid loading errors and improve reliability.
 
 ## Maintenance
 - All content is managed via Markdown in the `docs/` directory

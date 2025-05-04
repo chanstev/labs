@@ -111,6 +111,7 @@
 3. Use built-in themes when possible
 4. Document configuration changes
 5. Test locally before pushing
+6. When Cascade (the AI assistant) struggled with persistent Hugo deployment errors, switching to xAI Grok-3 mini enabled effective resolution, demonstrating the importance of using diverse AI tools for robust troubleshooting.
 
 ### Next Steps
 1. Clean up current configuration
